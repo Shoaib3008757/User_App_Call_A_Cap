@@ -1,0 +1,249 @@
+<resources>
+    <string name="app_name">Naqil</string>
+
+    <!--Login String-->
+    <string name="user_name">اسم المستخدم</string>
+    <string name="password">كلمه السر</string>
+    <string name="date_of_birth">تاريخ الولادة</string>
+    <string name="gender"> جنس </string>
+    <string name="forgot_password">انتبه ، لقد نسيت كلمة المرور</string>
+
+    <!--Login Option String-->
+    <string name="sign_in_with">تسجيل الدخول ب</string>
+
+    <!--Signup String-->
+    <string name="name"> اسم </string>
+    <string name="mobile">التليفون المحمول</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+
+    <!--Home String-->
+    <string name="home_string">NAQILCOM</string>
+    <string name="enter_pickup_location">إدخال الدولة بيك اب</string>
+    <string name="enter_drop_location">أدخل قطرة موقع</string>
+    <string name="write_comment">أكتب تعليقا</string>
+    <string name="home_alert_message">أدخل بيك اب الموقع</string>
+
+    <!--Forgot Password String-->
+    <string name="forgot_password_screen">هل نسيت كلمة المرور</string>
+
+    <!--Change Password String-->
+    <string name="Change_password_screen">تغيير كلمة السر</string>
+    <string name="crrent_password">كلمة السر الحالية</string>
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="new_password">كلمة السر الجديدة</string>
+
+    <!--Trip Detail String-->
+    <string name="trip_details">تفاصيل رحلة</string>
+    <string name="track_truck">المسار شاحنة</string>
+    <string name="pickup_point">نقطة الالتقاط</string>
+    <string name="booking_date">تاريخ الحجز</string>
+    <string name="drop_point">نقطة إسقاط</string>
+    <string name="truck_type">شاحنة نوع</string>
+    <string name="distance"> المسافات </string>
+    <string name="apr_trv_time">التقريبي الوقت الذي يستغرقه السفر</string>
+    <string name="payment_type">نوع الدفع</string>
+    <string name="total_price">السعر الكلي</string>
+
+    <!--Booking Detail-->
+    <string name="booking_details">تفاصيل الحجز</string>
+    <string name="cancel_ride">إلغاء ركوب </string>
+    <string name="share_eta"> شارك ايتا</string>
+    <string name="receipt"> إيصال </string>
+    <string name="on_trip">في رحلة</string>
+
+    <!--All Trip String-->
+    <string name="all_trip">جميع رحلات</string>
+    <string name="current_booking">الحجز الحالي</string>
+    <string name="booking_id">معرف الحجز</string>
+    <string name="truck_type_trip">شاحنة نوع</string>
+    <string name="pending">بانتظار الحجز</string>
+    <string name="accepted">الحجز مقبولة</string>
+    <string name="user_cancelled">إلغاء الحجز</string>
+    <string name="driver_unavailable">سائق غير متوفره </string>
+    <string name="driver_arrived">سائق وصلت</string>
+    <string name="completed">الحجز على الانتهاء</string>
+    <string name="driver_cancelled">سائق تم الالغاء </string>
+
+    <!--Rate Card String-->
+    <string name="rate_card">سعر البطاقة</string>
+    <string name="rate_card_category"> فئة </string>
+    <string name="loading_capacity">قدرة التحميل</string>
+    <string name="standard_rate_day">معدل قياسي - اليوم</string>
+    <string name="standard_rate_night">معدل قياسي - ليل</string>
+    <string name="extra_charges">رسوم إضافية</string>
+    <string name="ride_time_charge_day">ركوب الوقت الرسوم( DAY)</string>
+    <string name="per_km">لكل كيلومتر</string>
+    <string name="wait_time_charge">وقت الانتظار هو تحميلها .</string>
+    <string name="ride_time_charge_night">ركوب الوقت الرسوم (ليل)</string>
+    <string name="peak_time_charge">حشوة وقت الذروة</string>
+    <string name="peak_time_charges_des">قد تكون تكاليف وقت الذروة للتطبيق خلال ساعات ارتفاع الطلب و سيتم نقلت خلال booking.This تمكننا من تقديم المزيد من سيارة أجرة المتاحة لك .</string>
+    <string name="services_tex">خدمة تكس</string>
+    <string name="services_tex_des">تكس الخدمة المستحقة بالإضافة إلى ركوب أجرة .</string>
+    <string name="toll_tax">كما يجوز فرض عدد / الضرائب / وقوف السيارات في الفاتورة وفوق التسعير منتظم.</string>
+
+    <!-- User Profile -->
+    <string name="title_activity_user_profile">الشخصية للمستخدم آخر</string>
+    <string name="user_profile">الملف الشخصي</string>
+    <string name="name_profile">اسم :</string>
+    <string name="user_name_profile">اسم المستخدم :</string>
+    <string name="email_profile">البريد الإلكتروني :</string>
+    <string name="mobile_profile">التليفون المحمول :</string>
+    <string name="prf_date_of_birth">تاريخ الولادة :</string>
+    <string name="prf_gender">جنس :</string>
+
+    <string name="track_the_truck">تتبع الشاحنة</string>
+
+    <string name="facebook_popup_string">لم يتم تسجيل الحساب الخاص بك حتى الآن مع NaqilCom ، هل ترغب في تسجيل الآن ؟ </string>
+    <string name="register"> تسجيل </string>
+    <string name="cancel"> إلغاء </string>
+    <string name="ok"> حسنا </string>
+
+    <!--Popup String-->
+    <string name="special_locaion_pickup">بيك اب موقع خاص قد يكون تنطبق تختلف تهمة .</string>
+    <string name="select_date">حدد التاريخ .</string>
+    <string name="select_time">تحديد الوقت .</string>
+
+    <!--Validation string-->
+    <string name="please_enter_name">يرجى تقديم الاسم.</string>
+    <string name="please_min_name">اسم موسى أن يكون أربعة أحرف .</string>
+    <string name="please_min_isername">اسم المستخدم موسى أن يكون أربعة أحرف .</string>
+    <string name="please_enter_username">يرجى تقديم اسم المستخدم .</string>
+    <string name="please_enter_mobile">يرجى تقديم رقم هاتفك المحمول .</string>
+    <string name="please_enter_password">يرجى تقديم كلمة المرور.</string>
+    <string name="please_enter_confirm_password">يرجى تقديم تتفق كلمة المرور.</string>
+    <string name="password_length">يجب أن يكون طول كلمة السر بين 6-32 حرفا</string>
+    <string name="password_confirm">لا تطابق كلمة المرور و تأكيد كلمة المرور .</string>
+    <string name="please_enter_email">يرجى تقديم البريد الإلكتروني.</string>
+    <string name="please_enter_valid_email">يرجى تقديم بريد إلكتروني صحيح.</string>
+    <string name="location_long">لا يمكن تحديد المدينة خارج البلاد. </string>
+    <string name="location_short">لا يمكن تحديد مسافة قصيرة.</string>
+    <string name="please_enter_date">يرجى تقديم التاريخ.</string>
+    <string name="please_enter_time">يرجى تقديم الوقت .</string>
+    <string name="please_enter_current_password">يرجى تقديم كلمة المرور الحالية .</string>
+    <string name="please_current_password">غير صالح كلمة المرور الحالية .</string>
+    <string name="please_enter_new_password">يرجى تقديم كلمة مرور جديدة .</string>
+    <string name="password_new_length">يجب أن يكون طول كلمة سر جديدة بين 6-32 حرفا</string>
+    <string name="password_new_confirm">لا تطابق كلمة المرور الجديدة و تأكيد كلمة المرور.</string>
+    <string name="please_enter_card_number">يرجى تقديم رقم بطاقة .</string>
+    <string name="please_enter_year">يرجى تقديم العام منتهية الصلاحية .</string>
+    <string name="please_enter_month">يرجى تقديم الشهر منتهية الصلاحية .</string>
+    <string name="please_enter_cvc">يرجى تقديم سي .</string>
+    <string name="allow_minimum_four_characters">السماح الحد الأدنى أربعة أحرف</string>
+    <string name="allow_minimum_ten_characters">السماح الدنيا عشر حرفا</string>
+    <string name="emial_valid">البريد الإلكتروني تسمح abc@gmail.com</string>
+    <string name="password_valid">الرجاء إدخال كل من الحروف والأرقام</string>
+
+
+    <!--Api Key -->
+    <string name="facebook_app_id">1245761062135111</string>
+    <string name="google_maps_key">AIzaSyC-sPmd6moFvkTMvw9ZTNz1fr3CU4vvPOw</string>
+
+    <string name="paypal_client_id">AYqm_vX5LIbsdhuZBgkVBHAJ9YR6yA2_3N81R9wZGkjBZPMHDu91uo47fwL7779Bxly6li5vQWfrO0fy</string>
+    <!--sarju-facilitator@techintegrity.in-->
+
+    <string-array name="currency_array">
+        <item>العملة (اختياري)</item>
+        <item>غير محدد</item>
+        <item>دولار أمريكي</item>
+    </string-array>
+
+    <string name="cardNumber">رقم البطاقة</string>
+    <string name="month"> شهر </string>
+    <string name="year"> عام </string>
+    <string name="save"> حفظ </string>
+    <string name="cvc"> سي </string>
+    <string name="stripe_form">نموذج شريط</string>
+
+    <string name="new_user_sign_up">مستخدم جديد ؟ أفتح حساب الأن!</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="sign_in_logo">تسجيل الدخول</string>
+    <string name="create_account">أنشئ حسابك</string>
+    <string name="sign_up">سجل</string>
+    <string name="show">تبين</string>
+    <string name="hide">إخفاء</string>
+    <string name="forgot_password_logo">و س ص ز س ر&#160;&#160;كلمه السر</string>
+    <string name="retrive_password">استرجاع كلمة المرور</string>
+    <string name="location_logo">ل س ج تي ط س ن</string>
+    <string name="reservation">حجز</string>
+    <string name="now">الآن</string>
+    <string name="far_breakup">تفكك بكثير</string>
+    <string name="book">كتاب</string>
+    <string name="cancel_popup">إلغاء</string>
+    <string name="to">إلى</string>
+    <string name="vehicle_detail">الصفات السيارة</string>
+    <string name="payment_detail">بيانات الدفع</string>
+    <string name="confirm_request">تأكيد الطلب</string>
+    <string name="detail">تفاصيل</string>
+    <string name="location">مواقع</string>
+
+    <string name="book_my_trip">الكتاب رحلاتي</string>
+    <string name="my_trip">رحلاتي</string>
+    <string name="sign_out">خروج</string>
+
+    <string name="pending_popup">في انتظار الحجز</string>
+    <string name="all">جميع</string>
+    <string name="completed_popup">منجز</string>
+    <string name="driv_unavailable">سائق غير متوفر</string>
+    <string name="cnacel_booking">الحجز ألغي</string>
+    <string name="driver_accepted">سائق مقبول</string>
+    <string name="a">ا</string>
+    <string name="p">ص</string>
+    <string name="c">ج</string>
+    <string name="d">د</string>
+    <string name="cancel_request">إلغاء الطلب</string>
+
+    <string name="contact">اتصال</string>
+    <string name="arrival_point">وصول نقطة</string>
+    <string name="remaining">المتبقية</string>
+    <string name="coverd">مغطى</string>
+    <string name="total">مجموع</string>
+
+    <string name="cancel_booking_pop">إلغاء الحجز؟</string>
+    <string name="please_tell">من فضلك قل لنا لماذا كنت ترغب في إلغاء</string>
+    <string name="drv_late">السائق هو الراحل</string>
+    <string name="change_mind">غيرت رايي</string>
+    <string name="another_cab">حجز سيارة أجرة أخرى</string>
+    <string name="driver_denied">سائق واجب نفى</string>
+    <string name="dont_cancel">لا الغاء</string>
+    <string name="cancel_ride_pop">إلغاء جولة</string>
+    <string name="cancel_filter">إلغاء</string>
+    <string name="apply">تطبيق</string>
+    <string name="first">الأول</string>
+    <string name="km">كم</string>
+    <string name="after">بعد</string>
+
+    <string name="enter_pickup">الرجاء إدخال بيك اب الموقع.</string>
+    <string name="enter_drop">الرجاء إدخال قطرة الموقع.</string>
+    <string name="your_booking_cancel">تم إلغاء الحجز الخاص بك</string>
+    <string name="min">دقيقة</string>
+    <string name="not_valid_total_price">غير صالح السعر الإجمالي</string>
+    <string name="select_time_res">حدد الوقت</string>
+    <string name="time_is_large">التاريخ والوقت المحدد الخاص بك هو كبير جدا.</string>
+    <string name="date_time_not_valid">التاريخ المحدد والوقت الخاص بك غير صالحة.</string>
+    <string name="profile_update_sucess">تم تحديثها تفاصيل ملفك الشخصي بنجاح.</string>
+
+    <string name="enter_correct_login_detail">الرجاء إدخال تفاصيل تسجيل الدخول الصحيحة</string>
+    <string name="email_username_mobile_exit">عنوان البريد الإلكتروني، واسم المستخدم ورقم الهاتف النقال موجودة بالفعل.</string>
+    <string name="email_username_exit">عنوان البريد الإلكتروني، واسم المستخدم بالفعل في الوجود</string>
+    <string name="email_mobile_exit">عنوان البريد الإلكتروني ورقم الهاتف المتحرك بالفعل في الوجود.</string>
+    <string name="mobile_username_exit">رقم الجوال، اسم المستخدم بالفعل في الوجود.</string>
+    <string name="email_exit">البريد الإلكتروني معرف بالفعل في الوجود.</string>
+    <string name="user_exit">اسم المستخدم بالفعل في الوجود.</string>
+    <string name="mobile_exit">رقم الهاتف النقال بالفعل في الوجود.</string>
+    <string name="somthing_worng">حدث خطأ.</string>
+    <string name="data_not_found">البيانات غير يؤسس.</string>
+    <string name="vehicle_numbet_exits">عدد مركبة مسبقا.</string>
+    <string name="license_numbet_exits">رقم الترخيص موجود بالفعل.</string>
+    <string name="dublicate_booking">لقد تلقينا الحجز مؤخرا ووجدت أن هذا يمكن أن يكون نسخة مكررة من سابقتها. يرجى المحاولة بعد مرور بعض الوقت.</string>
+    <string name="invalid_birth_date">تاريخ الميلاد غير صالح.</string>
+    <string name="inactive_user">تم تأمين حسابك مؤقتا. يرجى الاتصال بالمشرف لأبعد من ذلك.</string>
+    <string name="correct_login_detail">يرجى إدخال البريد الإلكتروني الصحيح / اسم المستخدم وكلمة المرور.</string>
+    <string name="recheck_your_login_detail">يرجى إعادة فحص تفاصيل تسجيل الدخول الخاصة بك ومحاولة again.Don\'t ديك حساب نقي كوم؟ سجل للحصول على واحدة على الفور.</string>
+    <string name="password_change_sucess">تم تغيير الرقم السري بنجاح.</string>
+    <string name="recheck_your_login_detail_title">الرجاء التأكد من معلومات التسجيل</string>
+    <string name="invalid_login">تسجيل الدخول غير صالح</string>
+
+    <string name="gcm_defaultSenderId">946334651844</string>
+
+</resources>

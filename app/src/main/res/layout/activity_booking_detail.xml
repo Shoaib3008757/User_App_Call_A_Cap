@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/layout_header"
+        android:layout_above="@+id/layout_footer">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout">
+
+            <LinearLayout
+                android:id="@+id/layout_liniar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/txt_booking_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/booking_id"
+                    android:textColor="@color/yellow_texi"/>
+
+                <TextView
+                    android:id="@+id/txt_booking_id_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:textColor="@color/dark_gray"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_160"
+                    android:layout_marginTop="@dimen/margin_15">
+
+                    <TextView
+                        android:id="@+id/txt_pickup_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pickup_point"
+                        android:textColor="@color/yellow_texi"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_pickup_point_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginTop="@dimen/margin_3"
+                        android:textColor="@color/dark_gray"
+                        android:layout_below="@+id/txt_pickup_point"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/txt_booking_date"
+                        android:maxLines="2"
+                        android:layout_marginBottom="@dimen/margin_3"/>
+
+                    <TextView
+                        android:id="@+id/txt_booking_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:textColor="@color/dark_gray"
+                        android:layout_below="@+id/txt_pickup_point"
+                        android:layout_alignParentRight="true"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/seprator_color"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/to_background_with_text"
+                        android:layout_centerInParent="true"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/to_background_with_text"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/txt_to"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_16"
+                            android:text="@string/to"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_drop_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drop_point"
+                        android:textColor="@color/yellow_texi"
+                        android:layout_above="@+id/txt_drop_point_val"/>
+
+                    <TextView
+                        android:id="@+id/txt_drop_point_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:textColor="@color/dark_gray"
+                        android:layout_alignParentBottom="true"
+                        android:maxLines="2"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/seprator_color"
+                        android:layout_centerVertical="true"
+                        android:layout_centerInParent="true"/>
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/vehicle_details_heading_background_with_text"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--/>-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/title_bg"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/txt_vehicle_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_15"
+                            android:text="@string/vehicle_detail"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_car_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/height_60"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerInParent="true">
+
+                            <TextView
+                                android:id="@+id/txt_truct_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/truck_type"
+                                android:textColor="@color/yellow_texi"
+                                android:textSize="@dimen/font_15"/>
+
+                            <TextView
+                                android:id="@+id/txt_truct_type_val"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/dark_gray"
+                                android:textSize="@dimen/font_16"
+                                android:layout_below="@+id/txt_truct_type"
+                                android:layout_marginTop="@dimen/margin_5"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_car_image"
+                            android:layout_width="@dimen/height_60"
+                            android:layout_height="@dimen/height_60"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_driver_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_5">
+
+                        <ImageView
+                            android:id="@+id/img_driver_image"
+                            android:layout_width="@dimen/height_75"
+                            android:layout_height="@dimen/height_75"
+                            android:scaleType="fitXY"
+                            android:layout_centerVertical="true"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/img_vertical_sep"
+                            android:layout_width="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:src="@drawable/vertical_sep"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"/>
+
+                        <TextView
+                            android:id="@+id/txt_driver_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="@dimen/font_16"
+                            android:textColor="@color/yellow_texi"
+                            android:layout_toRightOf="@+id/img_vertical_sep"
+                            android:singleLine="true"/>
+
+                        <LinearLayout
+                            android:id="@+id/layout_tuck_num_plate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_driver_name"
+                            android:weightSum="2"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_toRightOf="@+id/img_vertical_sep">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                    <ImageView
+                                        android:id="@+id/img_trc_icon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/truck_type"
+                                        android:layout_centerVertical="true"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_drv_trc_typ"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:layout_toRightOf="@+id/img_trc_icon"
+                                        android:layout_marginLeft="@dimen/margin_5"
+                                        android:textSize="@dimen/font_14"
+                                        android:layout_centerVertical="true"
+                                        android:singleLine="true"/>
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/img_num_plate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/car_number"
+                                    android:layout_centerVertical="true"/>
+                                <TextView
+                                    android:id="@+id/txt_num_plate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_toRightOf="@+id/img_num_plate"
+                                    android:layout_marginLeft="@dimen/margin_5"
+                                    android:textSize="@dimen/font_14"
+                                    android:layout_centerVertical="true"
+                                    android:singleLine="true"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_lic_mob_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_tuck_num_plate"
+                            android:weightSum="2"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_toRightOf="@+id/img_vertical_sep">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+                                <ImageView
+                                    android:id="@+id/img_mobile_icon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/phone_number"
+                                    android:layout_centerVertical="true"/>
+
+                                <TextView
+                                    android:id="@+id/txt_mobile_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_toRightOf="@+id/img_mobile_icon"
+                                    android:layout_marginLeft="@dimen/margin_5"
+                                    android:textSize="@dimen/font_14"
+                                    android:layout_centerVertical="true"
+                                    android:singleLine="true"/>
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/img_lic_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/license_number"
+                                    android:layout_centerVertical="true"/>
+                                <TextView
+                                    android:id="@+id/txt_lic_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_toRightOf="@+id/img_lic_num"
+                                    android:layout_marginLeft="@dimen/margin_5"
+                                    android:textSize="@dimen/font_14"
+                                    android:layout_centerVertical="true"
+                                    android:singleLine="true"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vehicle_details_section_background"
+                android:layout_below="@+id/layout_liniar"
+                android:id="@+id/imageView2" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/img_payment_detail"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/payment_details_heading_background_with_text"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_below="@+id/layout_liniar"-->
+                <!--android:layout_marginTop="@dimen/margin_45"/>-->
+
+            <RelativeLayout
+                android:id="@+id/layout_payment_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blank_rounded_image"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/layout_liniar"
+                android:layout_marginTop="@dimen/margin_45">
+
+                <TextView
+                    android:id="@+id/txt_payment_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_15"
+                    android:text="@string/payment_detail"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_distance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30"
+                android:orientation="vertical"
+                android:layout_below="@+id/layout_payment_detail"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_15">
+
+                <TextView
+                    android:id="@+id/txt_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/distance"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/dark_gray"/>
+                <TextView
+                    android:id="@+id/txt_distance_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/txt_distance_km"
+                    android:textColor="@color/dark_gray"/>
+                <TextView
+                    android:id="@+id/txt_distance_km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" km"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/yellow_texi"
+                    android:layout_alignParentRight="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#30000000"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_travel_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30"
+                android:orientation="vertical"
+                android:layout_below="@+id/layout_distance"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_15">
+
+                <TextView
+                    android:id="@+id/txt_travel_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apr_trv_time"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/dark_gray"/>
+                <TextView
+                    android:id="@+id/txt_travel_time_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/dark_gray"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#30000000"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_total_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30"
+                android:orientation="vertical"
+                android:layout_below="@+id/layout_travel_time"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_15">
+
+                <TextView
+                    android:id="@+id/txt_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_price"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/dark_gray"/>
+
+                <TextView
+                    android:id="@+id/txt_total_price_dol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/yellow_texi"
+                    android:layout_toLeftOf="@+id/txt_total_price_val"/>
+
+                <TextView
+                    android:id="@+id/txt_total_price_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/dark_gray"
+                    android:layout_alignParentRight="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#30000000"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:id="@+id/layout_pending"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_70"
+            android:visibility="gone">
+            <RelativeLayout
+                android:id="@+id/layout_cancel_request_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/confirm_request_button"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/txt_cancel_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/cancel_request"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/font_15"/>
+
+            </RelativeLayout>
+            <!--<ImageView-->
+                <!--android:id="@+id/img_cancel_request_button"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/cancel_request_button"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--/>-->
+        </RelativeLayout>
+
+    <!-- Accepted Layout Start -->
+        <LinearLayout
+            android:id="@+id/layout_accepted"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_70"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/layout_accepted_call"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <ImageView
+                        android:id="@+id/image_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/contact_icon"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CALL"
+                        android:layout_below="@+id/image_cancel"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/margin_5"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/border_color"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_accepted_share_eta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <ImageView
+                        android:id="@+id/image_eta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/eta_icon"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/share_eta"
+                        android:layout_below="@+id/image_eta"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/margin_5"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    <!-- Accepted Layout End-->
+
+    <!-- Completed Layout Start -->
+        <LinearLayout
+            android:id="@+id/layout_completed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_70"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/layout_completed_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <ImageView
+                        android:id="@+id/image_receipt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cancel_icon"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/receipt"
+                        android:layout_below="@+id/image_receipt"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="@dimen/margin_5"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/border_color"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_completed_eta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/layout_completed_eta_chield"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <ImageView
+                        android:id="@+id/image_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/eta_icon"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/share_eta"
+                        android:layout_below="@+id/image_completed"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    <!-- Completed Layout End -->
+
+    <!-- Cancel By Uer Layout Start -->
+        <LinearLayout
+            android:id="@+id/layout_cancel_user"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_70"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/layout_cancel_user_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel_ride"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="@dimen/margin_5"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/border_color"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_cancel_user_eta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <ImageView
+                        android:id="@+id/image_cancel_user_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/eta_icon"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/share_eta"
+                        android:layout_below="@+id/image_cancel_user_completed"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    <!-- Cancel By Uer Layout End -->
+
+    <!-- On Trip Layout Start -->
+        <LinearLayout
+            android:id="@+id/layout_on_trip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_70"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_70"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/on_trip"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="@dimen/margin_5"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/border_color"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_share_on_trip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <ImageView
+                        android:id="@+id/image_cancel_on_trip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/eta_icon"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/share_eta"
+                        android:layout_below="@+id/image_cancel_on_trip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    <!-- On Trip Layout End -->
+
+    <!-- Driver Unavailabel Layout Start -->
+        <LinearLayout
+            android:id="@+id/layout_driver_unavailabel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_70"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel_ride"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="@dimen/margin_5"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/border_color"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_share_driver_unavailabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <ImageView
+                        android:id="@+id/image_share_driver_unavailabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/eta_icon"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/share_eta"
+                        android:layout_below="@+id/image_share_driver_unavailabel"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    <!-- Driver Unavailabel Layout End -->
+
+    <!-- Cancel By Driver Layout Start -->
+        <LinearLayout
+            android:id="@+id/layout_cancel_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_70"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel_ride"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="@dimen/margin_5"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/border_color"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_share_cancel_driver"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <ImageView
+                        android:id="@+id/image_share_cancel_driver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/eta_icon"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/share_eta"
+                        android:layout_below="@+id/image_share_cancel_driver"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    <!-- Cancel By Driver Layout End -->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/yellow_texi"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/layout_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_15">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/navigation_arrow"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_booking_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/booking_details"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/font_18"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_track_truck"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/txt_track_truck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_15"
+                android:text="@string/track_truck"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:paddingRight="@dimen/margin_5"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

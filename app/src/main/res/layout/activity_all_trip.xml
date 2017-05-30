@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/yellow_texi">
+
+        <RelativeLayout
+            android:id="@+id/layout_slidemenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/margin_15">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_15"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_all_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_trip"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/font_18"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/margin_15"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/filter_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_15"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:layout_below="@+id/layout_header">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_all_trip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_no_recourd_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/layout_header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Record Found"
+            android:textSize="@dimen/font_16"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+</RelativeLayout>

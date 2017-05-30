@@ -1,0 +1,254 @@
+<resources>
+    <string name="app_name">Call-a-cab</string>
+
+    <!--Login String-->
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="forgot_password">Opps, I forgot my password</string>
+
+    <!--Login Option String-->
+    <string name="sign_in_with">Sign In With</string>
+
+    <!--Signup String-->
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <!--Home String-->
+    <string name="home_string">CALL A CAB</string>
+    <string name="enter_pickup_location">Enter Pickup location</string>
+    <string name="enter_drop_location">Enter Drop location</string>
+    <string name="write_comment">Write a comment</string>
+    <string name="home_alert_message">Enter Pickup Locaton</string>
+
+    <!--Forgot Password String-->
+    <string name="forgot_password_screen">Forgot Password</string>
+
+    <!--Change Password String-->
+    <string name="Change_password_screen">Change Password</string>
+    <string name="crrent_password">Current Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+
+    <!--Trip Detail String-->
+    <string name="trip_details">Trip Details</string>
+    <string name="track_truck">Track Truck</string>
+    <string name="pickup_point">PICKUP POINT</string>
+    <string name="booking_date">BOOKING DATE</string>
+    <string name="drop_point">DROP POINT</string>
+    <string name="truck_type">TRUCK TYPE</string>
+    <string name="distance">DISTANCE</string>
+    <string name="apr_trv_time">APPROXIMATE TRAVEL TIME</string>
+    <string name="payment_type">PAYMENT TYPE</string>
+    <string name="total_price">TOTAL PRICE</string>
+
+    <!--Booking Detail-->
+    <string name="booking_details">Booking Details</string>
+    <string name="cancel_ride">CANCEL RIDE</string>
+    <string name="share_eta">SHARE ETA</string>
+    <string name="receipt">RECEIPT</string>
+    <string name="on_trip">ON TRIP</string>
+
+    <!--All Trip String-->
+    <string name="all_trip">All Trips</string>
+    <string name="current_booking">CURRENT BOOKING</string>
+    <string name="booking_id">BOOKING ID</string>
+    <string name="truck_type_trip">TRUCK TYPE</string>
+    <string name="pending">PENDING BOOKING</string>
+    <string name="accepted">ACCEPTED BOOKING</string>
+    <string name="user_cancelled">CANCEL BOOKING</string>
+    <string name="driver_unavailable">DRIVER UNAVAILABLE</string>
+    <string name="driver_arrived">DRIVER ARRIVED</string>
+    <string name="completed">COMPLETED BOOKING</string>
+    <string name="driver_cancelled">DRIVER CANCELLED</string>
+
+    <!--Rate Card String-->
+    <string name="rate_card">Rate card</string>
+    <string name="rate_card_category">CATEGORY</string>
+    <string name="loading_capacity">Loading Capacity</string>
+    <string name="standard_rate_day">STANDARD RATE - DAY</string>
+    <string name="standard_rate_night">STANDARD RATE - NIGHT</string>
+    <string name="extra_charges">EXTRA CHARGES</string>
+    <string name="ride_time_charge_day">RIDE TIME CHARGES (DAY)</string>
+    <string name="per_km">per km</string>
+    <string name="wait_time_charge">Wait time is chargeable.</string>
+    <string name="ride_time_charge_night">RIDE TIME CHARGES (NIGHT)</string>
+    <string name="peak_time_charge">PEAK TIME CHARGES</string>
+    <string name="peak_time_charges_des">Peak time charges may be applicable during high demand hours and will be conveyed during the booking.This enables us to make more cab available to you.</string>
+    <string name="services_tex">SERVICE TEX</string>
+    <string name="services_tex_des">Service tex is payable in addition to ride fare.</string>
+    <string name="toll_tax">Toll/tax/parking may be charged in your invoice over and above regular pricing.</string>
+
+    <!-- User Profile -->
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="user_profile">Profile</string>
+    <string name="name_profile">Name :</string>
+    <string name="user_name_profile">User Name :</string>
+    <string name="email_profile">Email :</string>
+    <string name="mobile_profile">Mobile :</string>
+    <string name="prf_date_of_birth">Date Of Birth :</string>
+    <string name="prf_gender">Gender :</string>
+
+    <string name="track_the_truck">Track The Truck</string>
+
+    <string name="facebook_popup_string">Your account is not yet registered with NaqilCom , Would you like to register now?</string>
+    <string name="register">Register</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+
+    <!--Popup String-->
+    <string name="special_locaion_pickup">Special location pickup may be apply differ charge.</string>
+    <string name="select_date">Select Date.</string>
+    <string name="select_time">Select Time.</string>
+
+    <!--Validation string-->
+    <string name="please_enter_name">Please provide a name.</string>
+    <string name="please_min_name">Name muse be four characters.</string>
+    <string name="please_min_isername">Username muse be four characters.</string>
+    <string name="please_enter_username">Please provide a username.</string>
+    <string name="please_enter_mobile">Please provide mobile number.</string>
+    <string name="please_enter_password">Please provide password.</string>
+    <string name="please_enter_confirm_password">Please provide conform password.</string>
+    <string name="password_length">Password length must be between 6-32 characters</string>
+    <string name="password_confirm">Password and confirm password doesn’t match.</string>
+    <string name="please_enter_email">Please provide an email.</string>
+    <string name="please_enter_valid_email">Please provide an valid email.</string>
+    <string name="location_long">You Can\'t select city out of the country. </string>
+    <string name="location_short">You Can\'t select short distance. </string>
+    <string name="please_enter_date">Please provide a date.</string>
+    <string name="please_enter_time">Please provide a time.</string>
+    <string name="please_enter_current_password">Please provide current password.</string>
+    <string name="please_current_password">Not valid current password.</string>
+    <string name="please_enter_new_password">Please provide new password.</string>
+    <string name="password_new_length">New password length must be between 6-32 characters</string>
+    <string name="password_new_confirm">New Password and confirm password doesn’t match.</string>
+
+    <string name="please_enter_card_number">Please provide an card number.</string>
+    <string name="please_enter_year">Please provide an expired year.</string>
+    <string name="please_enter_month">Please provide an expired month.</string>
+    <string name="please_enter_cvc">Please provide an cvc.</string>
+
+    <string name="allow_minimum_four_characters">Allow minimum four characters</string>
+    <string name="allow_minimum_ten_characters">Allow minimum ten characters</string>
+    <string name="emial_valid">Email allow abc@gmail.com</string>
+    <string name="password_valid">Please enter both letter &amp; numbers</string>
+
+
+    <!--Api Key -->
+    <string name="facebook_app_id">1245761062135111</string>
+    <string name="google_maps_key">AIzaSyBgXN7uKVlPN06wv-eCTkp8Rnshc9Lmkq8</string>
+
+    <string name="paypal_client_id">AYqm_vX5LIbsdhuZBgkVBHAJ9YR6yA2_3N81R9wZGkjBZPMHDu91uo47fwL7779Bxly6li5vQWfrO0fy</string>
+    <!--sarju-facilitator@techintegrity.in-->
+
+    <string-array name="currency_array">
+        <item>Currency (optional)</item>
+        <item>Unspecified</item>
+        <item>Rs</item>
+    </string-array>
+
+    <string name="cardNumber">Card Number</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="save">Save</string>
+    <string name="cvc">CVC</string>
+    <string name="stripe_form">Stripe Form</string>
+
+    <string name="new_user_sign_up">NEW USER ? SIGN UP NOW!</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_in_logo">S I G N I N</string>
+    <string name="sign_up_logo">S I G N U P</string>
+    <string name="create_account">Create your account</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
+    <string name="forgot_password_logo">F O R G O T&#160;&#160;P A S S W O R D</string>
+    <string name="retrive_password">RETRIEVE YOUR PASSWORD</string>
+    <string name="location_logo">L O C A T I O N S</string>
+    <string name="reservation">RESERVATION</string>
+    <string name="now">NOW</string>
+    <string name="far_breakup">FAR BREAKUP</string>
+    <string name="book">BOOK</string>
+    <string name="cancel_popup">CANCEL</string>
+    <string name="to">TO</string>
+    <string name="vehicle_detail">VEHICLE DETAILS</string>
+    <string name="payment_detail">PAYMENT DETAILS</string>
+    <string name="confirm_request">CONFIRM REQUEST</string>
+    <string name="detail">DETAILS</string>
+    <string name="location">LOCATIONS</string>
+
+    <string name="book_my_trip">Book My Trips</string>
+    <string name="my_trip">My Trips</string>
+    <string name="sign_out">Sign out</string>
+
+    <string name="pending_popup">Pending Booking</string>
+    <string name="all">All</string>
+    <string name="completed_popup">Completed</string>
+    <string name="driv_unavailable">Driver Unavailable</string>
+    <string name="cnacel_booking">Cancelled Booking</string>
+    <string name="driver_accepted">Driver Accepted</string>
+    <string name="a">A</string>
+    <string name="p">P</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="cancel_request">CANCEL REQUEST</string>
+
+    <string name="contact">Contact</string>
+    <string name="arrival_point">Arrival Point</string>
+    <string name="remaining">Remainng</string>
+    <string name="coverd">Covered</string>
+    <string name="total">Total</string>
+
+    <string name="cancel_booking_pop">Cancel booking?</string>
+    <string name="please_tell">Please tell us why you want to cancel</string>
+    <string name="drv_late">Driver is late</string>
+    <string name="change_mind">Changed my mind</string>
+    <string name="another_cab">Booked another cab</string>
+    <string name="driver_denied">Driver denied duty</string>
+    <string name="dont_cancel">Don\'t Cancel</string>
+    <string name="cancel_ride_pop">Cancel Ride</string>
+    <string name="cancel_filter">CANCEL</string>
+    <string name="apply">APPLY</string>
+    <string name="first">First</string>
+    <string name="km">Km</string>
+    <string name="after">After</string>
+    <string name="chnage_password">C H A N G E&#160;&#160;P A S S W O R D</string>
+
+    <string name="enter_pickup">Please Enter Pickup Loction.</string>
+    <string name="enter_drop">Please Enter Drop Loction.</string>
+    <string name="your_booking_cancel">Your booking has been cancelled</string>
+    <string name="min">min</string>
+    <string name="not_valid_total_price">Not Valid Total Price</string>
+    <string name="select_time_res">Select Time</string>
+    <string name="time_is_large">Your Selected date and time is to large.</string>
+    <string name="date_time_not_valid">Your Selected date and time not valid.</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="profile_update_sucess">Your profile details have been successfully updated.</string>
+
+    <string name="enter_correct_login_detail">Please enter correct login details</string>
+    <string name="email_username_mobile_exit">Email address,username and mobile number already exist.</string>
+    <string name="email_username_exit">Email address,username already in exist</string>
+    <string name="email_mobile_exit">Email address,mobile number already in exist</string>
+    <string name="mobile_username_exit">Mobile number,username already in exist</string>
+    <string name="email_exit">Email id already in exist</string>
+    <string name="user_exit">Username already in exist</string>
+    <string name="mobile_exit">Mobile number already in exist</string>
+    <string name="somthing_worng">Something went wrong</string>
+    <string name="data_not_found">Data Not Founds</string>
+    <string name="vehicle_numbet_exits">Vehicle number already exists</string>
+    <string name="license_numbet_exits">License number already exists</string>
+    <string name="dublicate_booking">We have received your booking recently and found this could be a duplicate of previous one. please try after some time.</string>
+    <string name="invalid_birth_date">Invalid Birth Date.</string>
+    <string name="inactive_user">Your account has been temporarily locked. Please contact your admin for further.</string>
+    <string name="correct_login_detail">Please enter your correct emial/user name and password.</string>
+    <string name="recheck_your_login_detail">Please recheck your login details and try again.Don\'t have an Naqilcom account? Register for one instantly.</string>
+    <string name="password_change_sucess">Password Change Successfully.</string>
+    <string name="recheck_your_login_detail_title">Recheck login details</string>
+    <string name="invalid_login">Invalid Login</string>
+
+    <string name="gcm_defaultSenderId">946334651844</string>
+
+</resources>

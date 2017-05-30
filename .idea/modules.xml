@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/User App.iml" filepath="$PROJECT_DIR$/User App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebooklibrary/facebooklibrary.iml" filepath="$PROJECT_DIR$/facebooklibrary/facebooklibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slideMenuLibrary/slideMenuLibrary.iml" filepath="$PROJECT_DIR$/slideMenuLibrary/slideMenuLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stripe/stripe.iml" filepath="$PROJECT_DIR$/stripe/stripe.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/layout_res"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_20">
+
+            <RelativeLayout
+                android:id="@+id/layout_select_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20">
+
+                <ImageView
+                    android:id="@+id/img_date_icon"
+                    android:layout_width="@dimen/height_30"
+                    android:layout_height="@dimen/height_30"
+                    android:src="@drawable/calendar"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yellow_texi"
+                    android:hint="@string/select_date"
+                    android:textSize="@dimen/font_18"
+                    android:layout_toRightOf="@+id/img_date_icon"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/yellow_texi"
+                    android:singleLine="true"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/textbox_bottom_line"
+                android:layout_marginTop="@dimen/margin_10"
+                android:scaleType="fitXY"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_select_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20">
+
+                <ImageView
+                    android:id="@+id/img_time_icon"
+                    android:layout_width="@dimen/height_30"
+                    android:layout_height="@dimen/height_30"
+                    android:src="@drawable/time"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yellow_texi"
+                    android:hint="@string/select_time"
+                    android:textSize="@dimen/font_18"
+                    android:layout_toRightOf="@+id/img_time_icon"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/yellow_texi"
+                    android:singleLine="true"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/textbox_bottom_line"
+                android:layout_marginTop="@dimen/margin_10"
+                android:scaleType="fitXY"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_done"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:background="@drawable/title_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/white"
+                android:text="Done"/>
+
+        </RelativeLayout>
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/sign_up_btn_register"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginBottom="@dimen/margin_10"/>-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

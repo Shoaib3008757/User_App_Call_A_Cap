@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#30000000"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/margin_30"
+        android:background="@drawable/login_error_border">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30">
+
+            <TextView
+                android:id="@+id/txt_invalid_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_color"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height_80"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30">
+
+            <TextView
+                android:id="@+id/txt_error_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height_60"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/ok"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/font_18"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/relativeLayout2">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/filter_popup_border"
+            android:layout_marginTop="@dimen/margin_40"
+            android:id="@+id/relativeLayout3"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/layout_all_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_background">
+
+
+                    <RelativeLayout
+                        android:id="@+id/layout_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_15">
+                        <ImageView
+                            android:id="@+id/img_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_background"
+                            />
+                        <TextView
+                            android:id="@+id/txt_a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_16"
+                            android:textColor="@color/white"
+                            android:text="@string/a"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/all"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/layout_all"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"/>
+
+                        <CheckBox
+                            android:id="@+id/chk_all"
+                            android:layout_width="@dimen/height_20"
+                            android:layout_height="@dimen/height_20"
+                            android:background="@drawable/filter_check_box"
+                            android:button="@android:color/transparent"
+                            android:checked="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_15"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/layour_pen_book_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_background">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_pending_book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_15">
+                        <ImageView
+                            android:id="@+id/img_pending_book"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_background"
+                            />
+                        <TextView
+                            android:id="@+id/txt_p"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_16"
+                            android:textColor="@color/white"
+                            android:text="@string/p"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_pending_booking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pending_popup"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/layout_pending_book"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"/>
+
+
+                        <CheckBox
+                            android:id="@+id/chk_pen_book"
+                            android:layout_width="@dimen/height_20"
+                            android:layout_height="@dimen/height_20"
+                            android:background="@drawable/filter_check_box"
+                            android:layout_centerVertical="true"
+                            android:button="@android:color/transparent"
+                            android:layout_alignParentRight="true"
+                            android:checked="false"
+                            android:layout_marginRight="@dimen/margin_15"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/layout_com_book_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_background">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_com_book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_15">
+
+                        <ImageView
+                            android:id="@+id/img_com_book"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_background"/>
+
+                        <TextView
+                            android:id="@+id/txt_c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_16"
+                            android:textColor="@color/white"
+                            android:text="@string/c"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_com_booking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/completed_popup"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/layout_com_book"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"/>
+
+
+                        <CheckBox
+                            android:id="@+id/chk_com_book"
+                            android:layout_width="@dimen/height_20"
+                            android:layout_height="@dimen/height_20"
+                            android:background="@drawable/filter_check_box"
+                            android:layout_centerVertical="true"
+                            android:button="@android:color/transparent"
+                            android:layout_alignParentRight="true"
+                            android:checked="false"
+                            android:layout_marginRight="@dimen/margin_15"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/layout_drv_reject_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_background">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_reg_book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_15">
+
+                        <ImageView
+                            android:id="@+id/drv_reg_book"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_background"/>
+                        <TextView
+                            android:id="@+id/txt_d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_16"
+                            android:textColor="@color/white"
+                            android:text="@string/d"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_drv_una"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/driver_accepted"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/layout_reg_book"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"/>
+
+                        <CheckBox
+                            android:id="@+id/chk_drv_reject"
+                            android:layout_width="@dimen/height_20"
+                            android:layout_height="@dimen/height_20"
+                            android:background="@drawable/filter_check_box"
+                            android:layout_centerVertical="true"
+                            android:button="@android:color/transparent"
+                            android:layout_alignParentRight="true"
+                            android:checked="false"
+                            android:layout_marginRight="@dimen/margin_15"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/layout_user_reject_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_background">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_usr_reg_book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_15">
+
+                        <ImageView
+                            android:id="@+id/img_usr_reg_book"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_background"
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_u"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_16"
+                            android:textColor="@color/white"
+                            android:text="@string/c"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_usr_rej"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cnacel_booking"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/layout_usr_reg_book"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"/>
+                        <CheckBox
+                            android:id="@+id/chk_user_reject"
+                            android:layout_width="@dimen/height_20"
+                            android:layout_height="@dimen/height_20"
+                            android:background="@drawable/filter_check_box"
+                            android:layout_centerVertical="true"
+                            android:button="@android:color/transparent"
+                            android:layout_alignParentRight="true"
+                            android:checked="false"
+                            android:layout_marginRight="@dimen/margin_15"
+                            />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/layout_drv_accept_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_background">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_drv_accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_15">
+
+                        <ImageView
+                            android:id="@+id/img_drv_accept"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_background"
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_drv_acp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_16"
+                            android:textColor="@color/white"
+                            android:text="@string/d"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_drv_accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/driver_accepted"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/layout_drv_accept"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"/>
+                    <CheckBox
+                        android:id="@+id/chk_drv_accept"
+                        android:layout_width="@dimen/height_20"
+                        android:layout_height="@dimen/height_20"
+                        android:background="@drawable/filter_check_box"
+                        android:layout_centerVertical="true"
+                        android:button="@android:color/transparent"
+                        android:layout_alignParentRight="true"
+                        android:checked="false"
+                        android:layout_marginRight="@dimen/margin_15"
+                        />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_calcel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cancel_button">
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txt_cancel_popup"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="@dimen/font_15"-->
+                            <!--android:text="@string/cancel_filter"-->
+                            <!--android:textColor="@color/reservation_color"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_centerHorizontal="true" />-->
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_apply"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/apply_button">
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txt_apply_popup"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="@dimen/font_15"-->
+                            <!--android:text="@string/apply"-->
+                            <!--android:textColor="@color/reservation_color"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_centerHorizontal="true" />-->
+
+                    </RelativeLayout>
+
+
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/img_apply"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:src="@drawable/apply_button"-->
+                        <!--android:scaleType="fitXY"/>-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/img_close_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close_btn"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_15"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

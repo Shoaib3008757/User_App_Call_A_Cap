@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:background="@drawable/filter_popup_border">
+
+        <RelativeLayout
+            android:id="@+id/layout__cash_cash"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/img_cash_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cash_cion"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_18"
+                    android:layout_centerVertical="true"
+                    android:text="Cash"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/img_cash_icon"/>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#30000000"/>
+        <RelativeLayout
+            android:id="@+id/layout_cash_paypal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/img_paypal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/paypal_icon"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_18"
+
+                    android:text="Paypal"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/img_paypal"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#30000000"/>
+        <RelativeLayout
+            android:id="@+id/layout_cash_credit_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/img_crd_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/credit_cards_icon"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_18"
+                    android:layout_centerVertical="true"
+                    android:text="Stripe"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/img_crd_card"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#30000000"/>
+        <RelativeLayout
+            android:id="@+id/layout_cash_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_18"
+                android:layout_centerInParent="true"
+                android:text="CANCEL"
+                android:textColor="@color/red"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

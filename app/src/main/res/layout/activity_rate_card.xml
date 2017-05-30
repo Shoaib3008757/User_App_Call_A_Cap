@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/yellow_texi">
+
+        <RelativeLayout
+            android:id="@+id/layout_slidemenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/margin_15">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_15"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_rate_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rate_card"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/font_18"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_15">
+
+                <RelativeLayout
+                    android:id="@+id/layout_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_truck_icon"
+                        android:layout_width="@dimen/height_40"
+                        android:layout_height="@dimen/height_40"
+                        android:scaleType="fitXY"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/txt_cateogry"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/relativeLayout4">
+
+                    <TextView
+                        android:id="@+id/txt_truck_typ_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/img_down_errow"
+                        android:layout_marginRight="@dimen/margin_5"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_down_errow"
+                        android:layout_width="@dimen/height_20"
+                        android:layout_height="@dimen/height_20"
+                        android:src="@drawable/down_arrow"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_3"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_cateogry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rate_card_category"
+                        android:textSize="@dimen/font_18"
+                        android:textColor="@color/yellow_texi"
+                        android:layout_alignBottom="@+id/relativeLayout4"
+                        android:layout_toRightOf="@+id/img_truck_icon"
+                        android:layout_toEndOf="@+id/img_truck_icon" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_color"
+                    android:layout_marginTop="@dimen/margin_15"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40"
+                    android:layout_marginTop="@dimen/margin_15">
+
+                    <TextView
+                        android:id="@+id/txt_loading_capacity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading_capacity"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/comment_color"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:id="@+id/txt_loading_capacity_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40"
+                android:background="#90000000">
+
+                <TextView
+                    android:id="@+id/txt_standars_rate_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/yellow_texi"
+                    android:text="@string/standard_rate_day"
+                    android:textSize="@dimen/font_18"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_15">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40">
+
+                    <TextView
+                        android:id="@+id/txt_day_fir_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_16"
+                        android:text=""
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/comment_color"/>
+
+                    <TextView
+                        android:id="@+id/txt_fir_day_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_16"
+                        android:text=""
+                        android:layout_toLeftOf="@+id/txt_fir_day_price"
+                        android:textColor="@color/yellow_texi"/>
+
+                    <TextView
+                        android:id="@+id/txt_fir_day_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_16"
+                        android:text=""
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/black"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_color"
+                    android:layout_marginTop="@dimen/margin_15"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40"
+                    android:layout_marginTop="@dimen/margin_15">
+
+                    <TextView
+                        android:id="@+id/txt_after_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_16"
+                        android:text=""
+                        android:textColor="@color/comment_color"/>
+
+
+                    <TextView
+                        android:id="@+id/txt_aft_day_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_16"
+                        android:text=""
+                        android:layout_toLeftOf="@+id/txt_aft_day_price"
+                        android:layout_marginLeft="@dimen/margin_3"
+                        android:textColor="@color/yellow_texi"/>
+                    <TextView
+                        android:id="@+id/txt_aft_day_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_16"
+                        android:text=""
+                        android:layout_toLeftOf="@+id/txt_aft_day_per_km"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_3"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txt_aft_day_per_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_16"
+                        android:text="@string/per_km"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/yellow_texi"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40"
+                android:background="#90000000">
+
+                <TextView
+                    android:id="@+id/txt_standars_rate_night"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yellow_texi"
+                    android:text="@string/standard_rate_night"
+                    android:textSize="@dimen/font_18"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_15">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40">
+
+                    <TextView
+                        android:id="@+id/txt_night_fir_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_16"
+                        android:text=""
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/comment_color"/>
+
+                    <TextView
+                        android:id="@+id/txt_fir_night_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_16"
+                        android:text=""
+                        android:layout_toLeftOf="@+id/txt_fir_nigth_price"
+                        android:textColor="@color/yellow_texi"/>
+
+                    <TextView
+                        android:id="@+id/txt_fir_nigth_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_16"
+                        android:text=""
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/black"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_color"
+                    android:layout_marginTop="@dimen/margin_15"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40"
+                    android:layout_marginTop="@dimen/margin_15">
+
+                    <TextView
+                        android:id="@+id/txt_after_night_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_16"
+                        android:text=""
+                        android:textColor="@color/comment_color"/>
+
+
+                    <TextView
+                        android:id="@+id/txt_aft_night_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_16"
+                        android:text=""
+                        android:layout_toLeftOf="@+id/txt_aft_night_price"
+                        android:layout_marginLeft="@dimen/margin_3"
+                        android:textColor="@color/yellow_texi"
+                        />
+                    <TextView
+                        android:id="@+id/txt_aft_night_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_16"
+                        android:text=""
+                        android:layout_toLeftOf="@+id/txt_aft_night_per_km"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_3"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txt_aft_night_per_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_16"
+                        android:text="@string/per_km"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/yellow_texi"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40"
+                android:background="#90000000">
+
+                <TextView
+                    android:id="@+id/txt_extra_charges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yellow_texi"
+                    android:text="@string/extra_charges"
+                    android:textSize="@dimen/font_18"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_15">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15">
+
+                    <TextView
+                        android:id="@+id/txt_ride_time_chr_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_15"
+                        android:text="@string/ride_time_charge_day"
+                        android:textColor="@color/comment_color"/>
+
+
+                    <TextView
+                        android:id="@+id/txt_ride_time_day_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_15"
+                        android:text=""
+                        android:layout_toLeftOf="@+id/txt_ride_time_day_price"
+                        android:layout_marginLeft="@dimen/margin_3"
+                        android:textColor="@color/yellow_texi"
+                        />
+                    <TextView
+                        android:id="@+id/txt_ride_time_day_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_15"
+                        android:text=""
+                        android:layout_toLeftOf="@+id/txt_ride_time_day_per_km"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_3"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txt_ride_time_day_per_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_15"
+                        android:text="@string/per_km"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/yellow_texi"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_wait_time_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wait_time_charge"
+                    android:textSize="@dimen/font_14"
+                    android:textColor="@color/rate_car_des"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_color"
+                    android:layout_marginTop="@dimen/margin_15"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15">
+
+                    <TextView
+                        android:id="@+id/txt_ride_time_chr_night"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_15"
+                        android:text="@string/ride_time_charge_night"
+                        android:textColor="@color/comment_color"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/txt_ride_time_night_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_15"
+                        android:text=""
+                        android:layout_toLeftOf="@+id/txt_ride_time_night_price"
+                        android:layout_marginLeft="@dimen/margin_3"
+                        android:textColor="@color/yellow_texi"
+                        />
+                    <TextView
+                        android:id="@+id/txt_ride_time_night_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_15"
+                        android:text=""
+                        android:layout_toLeftOf="@+id/txt_ride_time_night_per_km"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_3"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txt_ride_time_night_per_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_15"
+                        android:text="@string/per_km"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/yellow_texi"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_wait_time_night"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wait_time_charge"
+                    android:textSize="@dimen/font_14"
+                    android:textColor="@color/rate_car_des"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_color"
+                    android:layout_marginTop="@dimen/margin_15"/>
+
+                <TextView
+                    android:id="@+id/txt_per_time_charges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peak_time_charge"
+                    android:textSize="@dimen/font_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:textColor="@color/comment_color"/>
+
+                <TextView
+                    android:id="@+id/txt_per_time_charges_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peak_time_charges_des"
+                    android:textSize="@dimen/font_14"
+                    android:layout_marginTop="@dimen/margin_3"
+                    android:textColor="@color/rate_car_des"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_color"
+                    android:layout_marginTop="@dimen/margin_15"/>
+
+                <TextView
+                    android:id="@+id/txt_service_tex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/services_tex"
+                    android:textSize="@dimen/font_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:textColor="@color/comment_color"/>
+
+                <TextView
+                    android:id="@+id/txt_service_tex_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/services_tex_des"
+                    android:textSize="@dimen/font_14"
+                    android:layout_marginTop="@dimen/margin_3"
+                    android:textColor="@color/rate_car_des"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_color"
+                    android:layout_marginTop="@dimen/margin_15"/>
+
+                <TextView
+                    android:id="@+id/txt_toll_tex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/toll_tax"
+                    android:textSize="@dimen/font_14"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:textColor="@color/rate_car_des"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

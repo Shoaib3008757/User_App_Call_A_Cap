@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/margin_30"
+        android:layout_marginLeft="@dimen/margin_30"
+        android:layout_centerInParent="true"
+        android:background="@drawable/booking_cancel_border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_booking_pop"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_18"
+            android:layout_marginTop="@dimen/margin_20"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/please_tell"
+            android:layout_gravity="center"
+            android:textColor="@color/label_gray_light"
+            android:textSize="@dimen/font_16"
+            android:layout_marginTop="@dimen/margin_5"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50000000"
+            android:layout_marginTop="@dimen/margin_20"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_driver_late"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginLeft="@dimen/margin_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/drv_late"
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/chk_drive_late"
+                android:layout_width="@dimen/height_20"
+                android:layout_height="@dimen/height_20"
+                android:background="@drawable/filter_check_box"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_15"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50000000"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_change_mind"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginLeft="@dimen/margin_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/change_mind"
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/chk_changed_mind"
+                android:layout_width="@dimen/height_20"
+                android:layout_height="@dimen/height_20"
+                android:background="@drawable/filter_check_box"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_15"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50000000"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_another_cab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginLeft="@dimen/margin_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/another_cab"
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/chk_another_cab"
+                android:layout_width="@dimen/height_20"
+                android:layout_height="@dimen/height_20"
+                android:background="@drawable/filter_check_box"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_15"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50000000"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_denied_dute"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginLeft="@dimen/margin_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/driver_denied"
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/chk_denied_duty"
+                android:layout_width="@dimen/height_20"
+                android:layout_height="@dimen/height_20"
+                android:background="@drawable/filter_check_box"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_15"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50000000"
+            android:layout_alignParentBottom="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:weightSum="2"
+            >
+
+            <RelativeLayout
+                android:id="@+id/layout_dont_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/dont_cancel"
+                    android:textSize="@dimen/font_18"
+                    android:textColor="@color/yellow"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_cancel_ride"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/cancel_ride_pop"
+                    android:textSize="@dimen/font_18"
+                    android:textColor="@color/yellow"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

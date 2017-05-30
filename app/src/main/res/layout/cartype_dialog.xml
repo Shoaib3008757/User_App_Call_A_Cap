@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_car_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_centerInParent="true"
+        android:background="@drawable/redius_border"
+        android:layout_margin="@dimen/margin_10"
+        />
+
+</RelativeLayout>

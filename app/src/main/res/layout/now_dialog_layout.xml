@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/layout_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/layout_footer"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txt_car_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/yellow_texi"
+            android:textSize="@dimen/font_16"
+            android:layout_marginTop="@dimen/margin_15"/>
+
+        <TextView
+            android:id="@+id/txt_car_descriptin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/font_15"
+            android:layout_marginTop="@dimen/margin_10"
+            android:textAlignment="center"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_far_breakup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/horizontal_sep"
+                android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_bg"
+                android:layout_centerInParent="true"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:id="@+id/txt_far_breakup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_15"
+                    android:text="@string/far_breakup"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_timming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:id="@+id/layout_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_first_dlr_srt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/layout_rounded"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/currency_border"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:id="@+id/txt_first_currency"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:layout_centerInParent="true"
+                                android:textSize="7sp"
+                                android:layout_margin="1dp"
+                                />
+
+                        </RelativeLayout>
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/img_first_dol_icon"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@drawable/dollar_icon"-->
+                            <!--android:layout_centerVertical="true"/>-->
+
+                        <TextView
+                            android:id="@+id/txt_first_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_16"
+                            android:textColor="@color/yellow_texi"
+                            android:text=""
+                            android:layout_toRightOf="@+id/layout_rounded"
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_first_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_first_dlr_srt"
+                        android:text=""
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/vertical_sep"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sec_dlr_srt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/layout_secound_rounded"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/currency_border"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:id="@+id/txt_secound_currency"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:layout_centerInParent="true"
+                                android:textSize="7sp"
+                                android:layout_margin="1dp"
+                                />
+
+                        </RelativeLayout>
+                        <!--<ImageView-->
+                            <!--android:id="@+id/img_sec_dol_icon"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@drawable/dollar_icon"/>-->
+
+                        <TextView
+                            android:id="@+id/txt_sec_pric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_16"
+                            android:textColor="@color/yellow_texi"
+                            android:text=""
+                            android:layout_toRightOf="@+id/layout_secound_rounded"
+                            android:layout_marginLeft="@dimen/margin_5"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_sec_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_sec_dlr_srt"
+                        android:text=""
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/vertical_sep"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_three"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_thd_dlr_srt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/layout_thd_rounded"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/currency_border"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:id="@+id/txt_thd_currency"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:layout_centerInParent="true"
+                                android:textSize="7sp"
+                                android:layout_margin="1dp"
+                                />
+
+                        </RelativeLayout>
+                        <!--<ImageView-->
+                            <!--android:id="@+id/img_thd_dol_icon"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@drawable/dollar_icon"/>-->
+
+                        <TextView
+                            android:id="@+id/txt_thd_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_16"
+                            android:textColor="@color/yellow_texi"
+                            android:text=""
+                            android:layout_toRightOf="@+id/layout_thd_rounded"
+                            android:layout_marginLeft="@dimen/margin_5"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/vertical_sep"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:background="@drawable/cell_header_background">
+
+            <TextView
+                android:id="@+id/txt_specailChr_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_14"
+                android:textColor="@color/black"
+                android:text="@string/special_locaion_pickup"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/now_cash_popup_border"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_50"
+                android:layout_centerVertical="true"
+                android:weightSum="3"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/img_dol_total_prc"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@drawable/dollar_sign"-->
+                            <!--android:layout_marginRight="@dimen/margin_5"-->
+                            <!--android:layout_centerVertical="true"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_currency"
+                            android:textColor="@color/yellow_texi"
+                            android:textSize="@dimen/font_16"
+                            android:text=""
+                            android:layout_centerVertical="true"/>
+
+                        <TextView
+                            android:id="@+id/txt_total_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="@dimen/font_16"
+                            android:layout_toRightOf="@+id/txt_currency"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_3"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/gray_light"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/img_dol_person"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/no_of_persone"
+                            android:layout_marginRight="@dimen/margin_5"
+                            android:layout_centerVertical="true"/>
+
+                        <Spinner
+                            android:id="@+id/spinner_person"
+                            android:layout_width="wrap_content"
+                            android:minWidth="@dimen/height_30"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/img_dol_person"
+                            android:spinnerMode="dialog"
+                            android:background="@android:color/transparent"/>
+
+                        <ImageView
+                            android:id="@+id/img_down_errow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/down_arrow"
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:layout_toRightOf="@+id/spinner_person"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/gray_light"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_cash"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/img_cash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/money_icon"
+                            android:layout_marginRight="@dimen/margin_5"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView
+                            android:id="@+id/txt_cash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CASH"
+                            android:textSize="@dimen/font_16"
+                            android:layout_toRightOf="@+id/img_cash"
+                            android:layout_centerVertical="true"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/down_arrow"
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:layout_toRightOf="@+id/txt_cash"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_130"
+            android:minHeight="@dimen/height_100"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/gray_light">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_cab_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_book"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/book_btn"-->
+            <!--android:scaleType="fitXY"/>-->
+
+        <RelativeLayout
+            android:id="@+id/layout_book"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/book_now_btn"
+            android:layout_alignParentLeft="true"
+            >
+            <TextView
+                android:id="@+id/txt_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_14"
+                android:text="@string/book"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_cancle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reservation_btn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/txt_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_14"
+                android:text="@string/cancel_popup"
+                android:layout_centerInParent="true"
+                android:textColor="@color/reservation_color"/>
+
+        </RelativeLayout>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_cancel"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/cancel_btn"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

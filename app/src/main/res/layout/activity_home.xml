@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:background="@color/yellow">
+
+            <RelativeLayout
+                android:id="@+id/layout_slidemenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/margin_15">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/menu_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_string"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/black"
+                tools:text="@string/home_string" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_15">
+
+            <TextView
+                android:id="@+id/txt_locatons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_logo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15">
+
+                <ImageView
+                    android:id="@+id/img_pickup_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location_icon"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:id="@+id/edt_pickup_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_pickup_location"
+                    android:textColorHint="@color/grey_drk"
+                    android:textSize="@dimen/font_16"
+                    android:layout_toRightOf="@+id/img_pickup_location"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:textColor="@color/grey_drk"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent"
+                    android:layout_centerVertical="true"
+                    android:imeOptions="actionDone"
+                    android:layout_toLeftOf="@+id/img_pickup_close"
+                    android:layout_marginRight="@dimen/margin_5"/>
+
+                <ImageView
+                    android:id="@+id/img_pickup_close"
+                    android:layout_width="@dimen/height_20"
+                    android:layout_height="@dimen/height_20"
+                    android:src="@drawable/clear_btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/textbox_bottom_line"
+                android:layout_marginTop="@dimen/margin_10"
+                android:scaleType="fitXY"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15">
+
+                <ImageView
+                    android:id="@+id/img_drop_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location_icon"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:id="@+id/edt_drop_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_drop_location"
+                    android:textColorHint="@color/grey_drk"
+                    android:textSize="@dimen/font_16"
+                    android:layout_toRightOf="@+id/img_drop_location"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:textColor="@color/grey_drk"
+                    android:background="@android:color/transparent"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:layout_toLeftOf="@+id/img_drop_close"
+                    android:layout_marginRight="@dimen/margin_5"/>
+
+                <ImageView
+                    android:id="@+id/img_drop_close"
+                    android:layout_width="@dimen/height_20"
+                    android:layout_height="@dimen/height_20"
+                    android:src="@drawable/clear_btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/textbox_bottom_line"
+                android:layout_marginTop="@dimen/margin_10"
+                android:scaleType="fitXY"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15">
+
+                <ImageView
+                    android:id="@+id/img_drop_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/comment_icon"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:id="@+id/edt_write_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/write_comment"
+                    android:textColorHint="@color/grey_drk"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/grey_drk"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:layout_toRightOf="@+id/img_drop_comment"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:imeOptions="actionDone"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/textbox_bottom_line"
+                android:layout_marginTop="@dimen/margin_10"
+                android:scaleType="fitXY"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_footer"
+        android:layout_below="@+id/layout_header">
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layout_now"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/book_now_btn"
+            android:layout_alignParentLeft="true"
+            >
+            <TextView
+                android:id="@+id/txt_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_14"
+                android:text="@string/now"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+        <!--<ImageView-->
+            <!--android:id="@+id/img_now"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/book_now_btn"-->
+            <!--android:scaleType="fitXY"/>-->
+
+        <RelativeLayout
+            android:id="@+id/layout_reservation"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reservation_btn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/txt_reservation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_14"
+                android:text="@string/reservation"
+                android:layout_centerInParent="true"
+                android:textColor="@color/reservation_color"/>
+
+        </RelativeLayout>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_reservation"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/reservation_btn"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--/>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_pickup_drag_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_light"
+        android:padding="@dimen/margin_15"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_pickup_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/filter_popup_border"/>
+
+        <LinearLayout
+            android:id="@+id/layout_no_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/filter_popup_border"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/height_100"
+                android:layout_height="@dimen/height_100"
+                android:src="@drawable/location_search"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_20"/>
+
+            <TextView
+                android:id="@+id/txt_not_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="No Results"
+                android:textSize="@dimen/font_18"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textColor="@color/heading_truck_type"/>
+
+            <TextView
+                android:id="@+id/no_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="No locations matching your search."
+                android:textSize="@dimen/font_16"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textColor="@color/label_gray_light"/>
+            <TextView
+                android:id="@+id/please_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Please check and retry."
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/label_gray_light"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

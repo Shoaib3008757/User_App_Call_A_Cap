@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@drawable/navigation_bg">
+
+        <RelativeLayout
+            android:id="@+id/layout_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/margin_15">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/navigation_arrow"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_15"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_stripe_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stripe_form"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/font_18"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_15">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15">
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:hint="@string/cardNumber"
+                android:textSize="@dimen/font_16"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:textColorHint="@color/red"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:nextFocusDown="@+id/expYear"
+                android:nextFocusRight="@+id/expYear"
+                android:nextFocusForward="@+id/expYear"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/textbox_bottom_line"
+            android:layout_marginTop="@dimen/margin_10"
+            android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_15">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/expYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:hint="@string/year"
+                    android:textSize="@dimen/font_16"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/red"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/expMonth"
+                    android:nextFocusRight="@+id/expMonth"
+                    android:nextFocusForward="@+id/expMonth"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/textbox_bottom_line"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/margin_3">
+
+                <EditText
+                    android:id="@+id/expMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:hint="@string/month"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/red"
+                    android:inputType="numberDecimal"
+                    android:nextFocusDown="@+id/cvc"
+                    android:nextFocusRight="@+id/cvc"
+                    android:nextFocusForward="@+id/cvc"
+                    android:textSize="@dimen/font_16"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/textbox_bottom_line"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/margin_3">
+
+                <EditText
+                    android:id="@+id/cvc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:hint="@string/cvc"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/red"
+                    android:inputType="numberDecimal"
+                    android:nextFocusDown="@+id/currency"
+                    android:nextFocusRight="@+id/currency"
+                    android:nextFocusForward="@+id/currency"
+                    android:textSize="@dimen/font_16"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/textbox_bottom_line"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="@dimen/margin_15">-->
+            <!--<Spinner android:id="@+id/currency"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1.0"-->
+                <!--android:nextFocusForward="@+id/save"-->
+                <!--android:entries="@array/currency_array"/>-->
+        <!--</LinearLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@drawable/blank_btn">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:textSize="@dimen/font_18"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

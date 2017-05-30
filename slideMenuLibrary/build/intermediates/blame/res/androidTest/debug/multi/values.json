@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\User-10\\AndroidStudioProjects\\User App\\slideMenuLibrary\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1092,
+                    "endColumn": 42,
+                    "endOffset": 1130
+                },
+                "from": {
+                    "file": "C:\\Users\\User-10\\AndroidStudioProjects\\User App\\slideMenuLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1092,
+                        "endColumn": 42,
+                        "endOffset": 1130
+                    }
+                }
+            }
+        ]
+    }
+]

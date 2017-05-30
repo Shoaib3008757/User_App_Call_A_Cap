@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#30000000">
+
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/rotateloading_register"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        custom:loading_color="@color/red"
+        />
+
+</RelativeLayout>

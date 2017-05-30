@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@android:color/background_light"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+            <LinearLayout
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/layout_login_main">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="193dp"
+                        app:srcCompat="@drawable/callacab"
+                        android:id="@+id/imageView4"
+                        tools:layout_conversion_absoluteX="20dp"
+                        tools:layout_conversion_absoluteY="20dp"
+                        tools:layout_conversion_absoluteWidth="344dp"
+                        tools:layout_conversion_absoluteHeight="193dp"
+                        android:contentDescription=""
+                        tools:ignore="ContentDescription" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/dialog_hit_color">
+
+
+                    <TextView
+                        android:id="@+id/txt_sign_in_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_in_logo"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_18"
+                        tools:layout_conversion_absoluteX="151dp"
+                        tools:layout_conversion_absoluteY="50dp"
+                        tools:layout_conversion_absoluteWidth="81dp"
+                        tools:layout_conversion_absoluteHeight="21dp"
+                        tools:gravity="center" />
+
+
+                    <EditText
+                        android:id="@+id/edit_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/user_name"
+                        android:inputType="text"
+                        android:drawableLeft="@drawable/user_icon"
+                        android:drawableStart="@drawable/user_icon"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/font_16"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        tools:layout_conversion_absoluteX="20dp"
+                        tools:layout_conversion_absoluteY="114dp"
+                        tools:layout_conversion_absoluteWidth="344dp"
+                        tools:layout_conversion_absoluteHeight="40dp"
+                        android:maxLines="1" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginBottom="@dimen/margin_10">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:hintTextAppearance="@style/FormTextInputLayou"
+                                android:theme="@style/FormTextInputLayoutTheme"
+                                android:layout_toLeftOf="@+id/layout_show_hide"
+                                tools:ignore="RtlHardcoded">
+
+                                <EditText
+                                    android:id="@+id/edit_password"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/password"
+                                    android:inputType="textPassword"
+                                    android:drawableLeft="@drawable/password_icon"
+                                    android:drawableStart="@drawable/password_icon"
+                                    android:drawablePadding="@dimen/margin_10"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/white"
+                                    android:textSize="@dimen/font_16"
+                                    android:maxLines="1" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/layout_show_hide"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:layout_centerVertical="true"
+                                tools:ignore="RtlHardcoded">
+
+                                <TextView
+                                    android:id="@+id/txt_hide_show"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/show"
+                                    android:layout_centerInParent="true"/>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/layout_signin"
+                            android:layout_width="198dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/blank_btn"
+                            tools:layout_conversion_absoluteX="82dp"
+                            tools:layout_conversion_absoluteY="249dp"
+                            tools:layout_conversion_absoluteWidth="218dp"
+                            tools:layout_conversion_absoluteHeight="41dp"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/txt_signin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/font_15"
+                                android:text="@string/sign_in"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                        android:id="@+id/layout_forgot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:layout_conversion_absoluteX="20dp"
+                        tools:layout_conversion_absoluteY="291dp"
+                        tools:layout_conversion_absoluteWidth="344dp"
+                        tools:layout_conversion_absoluteHeight="31dp">
+
+                        <TextView
+                            android:id="@+id/txt_forgot_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="@dimen/font_14"
+                            android:text="@string/forgot_password"
+                            android:layout_marginTop="@dimen/margin_15"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+    <include layout="@layout/notify_alert"></include>
+
+</RelativeLayout>

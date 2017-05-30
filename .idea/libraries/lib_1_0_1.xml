@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib-1.0.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/735c45ebcc59d59dca1162e5bce4a913a15c2c76/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/735c45ebcc59d59dca1162e5bce4a913a15c2c76/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.victor/lib/1.0.1/8d0bd62f6b15ae5edf3f2abb6567e6400e2fec39/lib-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

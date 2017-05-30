@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/yellow_texi">
+
+        <TextView
+            android:id="@+id/txt_car_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trip_details"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/font_18"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_15"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/navigation_arrow"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/layout_header"
+        android:layout_above="@+id/layout_confirm_request">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout">
+
+            <LinearLayout
+                android:id="@+id/layout_liniar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/txt_pickup_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pickup_point"
+                    android:textColor="@color/yellow_texi"/>
+
+                <TextView
+                    android:id="@+id/txt_pickup_point_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:textColor="@color/dark_gray"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_160"
+                    android:layout_marginTop="@dimen/margin_15">
+
+                    <TextView
+                        android:id="@+id/txt_booking_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/booking_date"
+                        android:textColor="@color/yellow_texi"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_booking_date_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:textColor="@color/dark_gray"
+                        android:layout_below="@+id/txt_booking_date"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#30000000"
+                        android:layout_centerVertical="true"/>
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/to_background_with_text"-->
+                        <!--android:layout_centerInParent="true"/>-->
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/to_background_with_text"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/txt_to"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_16"
+                            android:text="@string/to"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_drop_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drop_point"
+                        android:textColor="@color/yellow_texi"
+                        android:layout_above="@+id/txt_drop_point_val"/>
+
+                    <TextView
+                        android:id="@+id/txt_drop_point_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:textColor="@color/dark_gray"
+                        android:layout_alignParentBottom="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#30000000"
+                        android:layout_centerVertical="true"
+                        android:layout_centerInParent="true"/>
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/vehicle_details_heading_background_with_text"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--/>-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/title_bg"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/txt_vehicle_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_15"
+                            android:text="@string/vehicle_detail"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/margin_15">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/height_60"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/txt_truct_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/truck_type"
+                            android:textColor="@color/yellow_texi"
+                            android:textSize="@dimen/font_15"/>
+
+                        <TextView
+                            android:id="@+id/txt_truct_type_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/font_16"
+                            android:layout_below="@+id/txt_truct_type"
+                            android:layout_marginTop="@dimen/margin_5"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_car_image"
+                            android:layout_width="@dimen/height_60"
+                            android:layout_height="@dimen/height_60"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vehicle_details_section_background"
+                android:layout_below="@+id/layout_liniar"
+                android:id="@+id/imageView2" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_payment_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blank_rounded_image"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/layout_liniar"
+                android:layout_marginTop="@dimen/margin_45">
+
+                <TextView
+                    android:id="@+id/txt_payment_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_15"
+                    android:text="@string/payment_detail"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <!--<ImageView-->
+                <!--android:id="@+id/img_payment_detail"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/payment_details_heading_background_with_text"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_below="@+id/layout_liniar"-->
+                <!--android:layout_marginTop="@dimen/margin_45"/>-->
+
+
+            <RelativeLayout
+                android:id="@+id/layout_payment_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30"
+                android:orientation="vertical"
+                android:layout_below="@+id/layout_payment_detail"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_15">
+
+                <TextView
+                    android:id="@+id/txt_payment_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment_type"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/dark_gray"/>
+
+                <TextView
+                    android:id="@+id/txt_payment_type_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/dark_gray"
+                    android:layout_alignParentRight="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#30000000"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_distance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30"
+                android:orientation="vertical"
+                android:layout_below="@+id/layout_payment_type"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_15">
+
+                <TextView
+                    android:id="@+id/txt_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/distance"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/dark_gray"/>
+                <TextView
+                    android:id="@+id/txt_distance_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/txt_distance_km"
+                    android:textColor="@color/dark_gray"/>
+                <TextView
+                    android:id="@+id/txt_distance_km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" km"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/yellow_texi"
+                    android:layout_alignParentRight="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#30000000"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_ast_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30"
+                android:orientation="vertical"
+                android:layout_below="@+id/layout_distance"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_15">
+
+                <TextView
+                    android:id="@+id/txt_ast_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apr_trv_time"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/dark_gray"/>
+                <TextView
+                    android:id="@+id/txt_ast_time_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/dark_gray"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#30000000"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_total_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30"
+                android:orientation="vertical"
+                android:layout_below="@+id/layout_ast_time"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_15">
+
+                <TextView
+                    android:id="@+id/txt_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_price"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/dark_gray"/>
+
+                <TextView
+                    android:id="@+id/txt_total_price_dol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/yellow_texi"
+                    android:layout_toLeftOf="@+id/txt_total_price_val"/>
+
+                <TextView
+                    android:id="@+id/txt_total_price_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/dark_gray"
+                    android:layout_alignParentRight="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#30000000"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_confirm_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/confirm_request_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/txt_confirm_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_15"
+            android:text="@string/confirm_request"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

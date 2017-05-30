@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_bg">
+
+    <RelativeLayout
+        android:id="@+id/layout_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_icon"
+            android:layout_alignParentRight="true"
+            android:paddingTop="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_15"
+            android:paddingRight="@dimen/margin_15"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100"
+        android:layout_below="@+id/layout_setting"
+        android:layout_marginTop="@dimen/margin_15">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/layout_user_image"
+                android:layout_width="@dimen/height_80"
+                android:layout_height="@dimen/height_80"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:background="@drawable/user_img_bg"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="@dimen/height_60"
+                    android:layout_height="@dimen/height_60"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/layout_user_image"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_15">
+
+            <TextView
+                android:id="@+id/txt_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/slide_user_name"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/txt_user_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@+id/txt_user_name"
+                android:textColor="@color/slide_user_num"
+                android:textSize="@dimen/font_15"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_id"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#20000000"
+        android:layout_below="@+id/layout_user"
+        android:layout_marginTop="@dimen/margin_30"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_id"
+        android:layout_marginTop="@dimen/margin_20"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_book_my_trip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_centerVertical="true">
+
+
+            <ImageView
+                android:id="@+id/img_book_my_trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/truck_slide_icon"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/txt_book_my_trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/book_my_trip"
+                android:layout_toRightOf="@+id/img_book_my_trip"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:textSize="@dimen/font_15"
+                android:textColor="@color/slide_option_menu"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/nevigation_arrow"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout_my_trip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/img_my_trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trips_icon"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/txt_my_trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_trip"
+                android:layout_toRightOf="@+id/img_my_trip"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:textSize="@dimen/font_15"
+                android:textColor="@color/slide_option_menu"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/nevigation_arrow"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_rate_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/img_rate_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rate_icon"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/txt_rate_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rate_card"
+                android:layout_toRightOf="@+id/img_rate_card"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:textSize="@dimen/font_15"
+                android:textColor="@color/slide_option_menu"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/nevigation_arrow"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_cahnge_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/img_cahnge_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/password_slide_icon"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/txt_cahnge_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Change_password_screen"
+                android:layout_toRightOf="@+id/img_cahnge_password"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:textSize="@dimen/font_15"
+                android:textColor="@color/slide_option_menu"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/nevigation_arrow"
+                android:layout_marginRight="@dimen/margin_15"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_footer_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#20000000"
+            android:layout_alignParentTop="true"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/img_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logout_icon"
+                android:layout_marginLeft="@dimen/margin_30"/>
+
+            <TextView
+                android:id="@+id/txt_sign_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_out"
+                android:layout_toRightOf="@+id/img_logout"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:textSize="@dimen/font_15"
+                android:textColor="@color/slide_option_menu"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt_gender"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/yellow"
+    android:hint="@string/gender"
+    android:textSize="@dimen/font_16"
+    android:layout_marginLeft="@dimen/margin_15"
+    android:layout_centerVertical="true"
+    android:background="@android:color/transparent"
+    android:textColorHint="@color/yellow"
+    android:singleLine="true"
+    android:padding="@dimen/margin_10"
+    />
